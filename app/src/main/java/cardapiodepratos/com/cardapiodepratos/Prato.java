@@ -6,7 +6,7 @@ package cardapiodepratos.com.cardapiodepratos;
 
 public class Prato {
     private String nome;
-    private String drescicao;
+    private String descricao;
     private String url_foto;
     private Double preco;
 
@@ -16,14 +16,6 @@ public class Prato {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public String getDrescicao() {
-        return drescicao;
-    }
-
-    public void setDrescicao(String drescicao) {
-        this.drescicao = drescicao;
     }
 
     public String getUrl_foto() {
@@ -40,5 +32,13 @@ public class Prato {
 
     public void setPreco(Double preco) {
         this.preco = preco;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }
