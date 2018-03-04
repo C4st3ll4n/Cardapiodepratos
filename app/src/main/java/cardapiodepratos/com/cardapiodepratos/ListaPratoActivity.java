@@ -2,6 +2,7 @@ package cardapiodepratos.com.cardapiodepratos;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class ListaPratoActivity extends AppCompatActivity {
@@ -16,6 +17,14 @@ public class ListaPratoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_prato);
         lw = findViewById(R.id.lw);
+        String[] nome_prato = null;
+        for (int c = 0; c < pt.length; c++){
+            nome_prato[c] = pt[c].getNome();
+        }
 
+        ArrayAdapter<String> ad = new ArrayAdapter(getApplicationContext(),
+                android.R.layout.simple_list_item_1, android.R.id.text1,nome_prato);
+
+        lw.setAdapter(ad);
     }
 }
