@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Cardapio de pratos</string>
+    <string name="title_activity_act_cad_pratos">Cadastro de Pratos</string>
+    <string name="lbl_nomeDoPrato">Nome do Prato</string>
+    <string name="lbl_DescricaoPrato" translatable="false">Descrição do Prato</string>
+    <string name="lbl_Preco">Preço</string>
+    <string name="lbl_URLdaFoto">URL da Foto</string>
 </resources>
