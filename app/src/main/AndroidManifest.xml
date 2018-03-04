@@ -17,9 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
+
         <activity android:name=".ListaPratoActivity"></activity>
-=======
 
         <activity
             android:name=".ActCadPratos"
@@ -27,7 +26,7 @@
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
->>>>>>> 941e532e9d818b53c746bfb8e672389cbbf1554f
+
     </application>
 
 </manifest>
