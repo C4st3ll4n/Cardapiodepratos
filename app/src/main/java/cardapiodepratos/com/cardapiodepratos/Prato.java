@@ -1,14 +1,16 @@
 package cardapiodepratos.com.cardapiodepratos;
 
-/**
- * Criado por Henrique em 04/03/2018.
- */
-
 public class Prato {
     private String nome;
     private String descricao;
     private String url_foto;
     private Double preco;
+
+    public Prato(String n, String d, Double p) {
+        this.nome = n;
+        this.descricao = d;
+        this.preco = p;
+    }
 
     public String getNome() {
         return nome;
