@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cardapiodepratos.com.cardapiodepratos.ActCadPratos"
+    tools:showIn="@layout/activity_act_cad_pratos">
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/lbl_nomeDoPrato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNomeDoPrato"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtNome"
+        app:layout_constraintStart_toStartOf="@+id/txtNome"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    <TextView
+        android:id="@+id/txtDescricaoPrato"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/lbl_DescricaoPrato"
+        app:layout_constraintEnd_toEndOf="@+id/edtNomeDoPrato"
+        app:layout_constraintStart_toStartOf="@+id/edtNomeDoPrato"
+        app:layout_constraintTop_toBottomOf="@+id/edtNomeDoPrato" />
+
+    <EditText
+        android:id="@+id/edtDescricaoDoPrato"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtDescricaoPrato"
+        app:layout_constraintStart_toStartOf="@+id/txtDescricaoPrato"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescricaoPrato" />
+
+    <TextView
+        android:id="@+id/txtPreco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/lbl_Preco"
+        app:layout_constraintEnd_toEndOf="@+id/edtDescricaoDoPrato"
+        app:layout_constraintStart_toStartOf="@+id/edtDescricaoDoPrato"
+        app:layout_constraintTop_toBottomOf="@+id/edtDescricaoDoPrato" />
+
+    <EditText
+        android:id="@+id/edtPreco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/txtPreco"
+        app:layout_constraintStart_toStartOf="@+id/txtPreco"
+        app:layout_constraintTop_toBottomOf="@+id/txtPreco" />
+
+    <TextView
+        android:id="@+id/txtURLdaFoto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/lbl_URLdaFoto"
+        app:layout_constraintEnd_toEndOf="@+id/edtPreco"
+        app:layout_constraintStart_toStartOf="@+id/edtPreco"
+        app:layout_constraintTop_toBottomOf="@+id/edtPreco" />
+
+    <EditText
+        android:id="@+id/edtURLdaFoto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtURLdaFoto"
+        app:layout_constraintStart_toStartOf="@+id/txtURLdaFoto"
+        app:layout_constraintTop_toBottomOf="@+id/txtURLdaFoto" />
+</android.support.constraint.ConstraintLayout>
