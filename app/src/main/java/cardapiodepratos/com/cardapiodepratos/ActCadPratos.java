@@ -23,10 +23,10 @@ public class ActCadPratos extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        edtNomeDoPrato = (EditText)findViewById(R.id.edtNomeDoPrato);
-        edtDescricaoPrato = (EditText)findViewById(R.id.edtDescricaoDoPrato);
-        edtPreco = (EditText)findViewById(R.id.edtPreco);
-        edtURLdaFoto = (EditText)findViewById(R.id.edtURLdaFoto);
+        edtNomeDoPrato = findViewById(R.id.edtNomeDoPrato);
+        edtDescricaoPrato = findViewById(R.id.edtDescricaoDoPrato);
+        edtPreco = findViewById(R.id.edtPreco);
+        edtURLdaFoto = findViewById(R.id.edtURLdaFoto);
 
 
     }
