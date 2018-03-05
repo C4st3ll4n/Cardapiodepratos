@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToLista(View v){
-        Intent t = new Intent(this,ListaPratoActivity.class);
+        Intent t = new Intent(this,ActCadPratos.class);
         startActivity(t);
     }
 }

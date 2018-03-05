@@ -28,5 +28,6 @@ public class ActCadPratos extends AppCompatActivity {
         edtPreco = (EditText)findViewById(R.id.edtPreco);
         edtURLdaFoto = (EditText)findViewById(R.id.edtURLdaFoto);
 
+
     }
 }
