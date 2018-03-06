@@ -37,6 +37,15 @@ public class PratoAdapet extends RecyclerView.Adapter<PratoAdapet.ViewHolderPrat
     @Override
     public void onBindViewHolder(PratoAdapet.ViewHolderPratos holder, int position) {
 
+        if ( (dados != null) && (dados.size() > 0 )) {
+
+            Pratos pratos = dados.get(position);
+
+            holder.txtNomePrato.setText(pratos.nomePrato);
+            holder.txtdescricaoPrato.setText(pratos.DescriçaoPrato);
+            holder.txtPreco.setText(pratos.Preco);
+            holder.txtURLdaFoto.setText(pratos.URLdaFoto);
+        }
     }
 
     @Override
