@@ -1,9 +1,5 @@
 package cardapiodepratos.com.cardapiodepratos;
 
-/**
- * Criado por Henrique em 04/03/2018.
- */
-
 public class Prato {
     private String nome;
     private String descricao;
