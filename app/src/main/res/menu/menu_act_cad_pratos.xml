@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_OK"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="@string/title_menu_ok"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_cancelar"
+        android:title="@string/title_cancelar"
+        android:orderInCategory="2"
+        app:showAsAction="never" />
+</menu>
