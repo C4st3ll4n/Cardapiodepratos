@@ -5,4 +5,12 @@
     <string name="lbl_DescricaoPrato" translatable="false">Descrição do Prato</string>
     <string name="lbl_Preco">Preço</string>
     <string name="lbl_URLdaFoto">URL da Foto</string>
+    <string name="title_menu_ok">Ok</string>
+    <string name="title_cancelar">Cancelar</string>
+    <string name="title_aviso">Aviso</string>
+    <string name="title_aviso">Aviso</string>
+    <string name="message_campos_invalidos_Brancos">Há campos invalidos ou em branco</string>
+    <string name="lbl_ok">OK</string>
+    <string name="message_conexao_criada_com_secesso">Conexão criada com sucesso</string>
+    <string name="title_erro">ERRO</string>
 </resources>
