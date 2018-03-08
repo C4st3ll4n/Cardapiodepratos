@@ -1,5 +1,6 @@
 package cardapiodepratos.com.cardapiodepratos;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 <<<<<<< HEAD
 import android.support.v7.app.AppCompatActivity;
@@ -14,10 +15,16 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
+
+import java.util.List;
 
 import cardapiodepratos.com.cardapiodepratos.DadaBase.DadosOpenHelper;
+import cardapiodepratos.com.cardapiodepratos.Dominio.Entidades.Pratos;
+import cardapiodepratos.com.cardapiodepratos.Dominio.Repositorio.PratoRepositorio;
 
 >>>>>>> 77a179c3cea1a413ea37f35dc09d6363f69cb637
 
@@ -30,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
     private DadosOpenHelper dadosOpenHelper;
     private ConstraintLayout LayoutlistaCardaoioMain;
 
+    private PratoAdapet pratoAdapet;
+
+    private PratoRepositorio pratoRepositorio;
+
+    private ImageView fotoImageView;
+
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -41,6 +55,24 @@ public class MainActivity extends AppCompatActivity {
         LayoutlistaCardaoioMain = (ConstraintLayout) findViewById(R.id.LayoutlistaCardaoioMain);
 
         criarConexao();
+
+        lstDados.setHasFixedSize(true);
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        lstDados.setLayoutManager(linearLayoutManager);
+
+        pratoRepositorio = new PratoRepositorio(conexao);
+
+        List<Pratos> dados = pratoRepositorio.buscarPratos();
+
+        pratoAdapet = new PratoAdapet(dados);
+
+        lstDados.setAdapter(pratoAdapet);
+
+        fotoImageView = (ImageView) findViewById(R.id.txtURLdaFoto);
+
+
+
     }
 
     private void criarConexao(){
